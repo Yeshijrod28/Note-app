@@ -4,9 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
-    "start": "npm run start --prefix backend"
-  },
+  "install:all": "npm install --prefix backend && npm install --prefix frontend",
+  "dev": "concurrently \"npm run server\" \"npm run client\"",
+  "server": "npm run dev --prefix backend",
+  "client": "npm run dev --prefix frontend",
+  "build": "npm run build --prefix frontend",
+  "start": "npm run start --prefix backend"
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Yeshijrod28/Note-app.git"
@@ -18,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/Yeshijrod28/Note-app/issues"
   },
-  "homepage": "https://github.com/Yeshijrod28/Note-app#readme"
+  "homepage": "https://github.com/Yeshijrod28/Note-app#readme",
+  "devDependencies": {
+    "concurrently": "^9.2.0"
+  }
 }
