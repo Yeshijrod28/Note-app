@@ -15,7 +15,7 @@ const HomePage = () => {
   useEffect(() => {
     const fetchNotes = async () => {
       try {
-        const res = await api.get("https://note-app-2wvg.onrender.com/");
+        const res = await api.get("https://note-app-2wvg.onrender.com/notes");
         console.log(res.data);
         setNotes(res.data);
         setIsRateLimited(false);
