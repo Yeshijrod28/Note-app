@@ -15,4 +15,4 @@ A full-stack note-taking application built to practice modern web development. U
 - **Frontend:** React.js, HTML, CSS, JavaScript
 - **Backend:** Node.js, Express.js
 - **Database:** MongoDB
-- **Deployment: Render
+- **Deployment:** Render
